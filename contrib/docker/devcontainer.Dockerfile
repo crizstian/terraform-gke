@@ -70,4 +70,4 @@ RUN gcloud components install gke-gcloud-auth-plugin --quiet
 
 WORKDIR /workspace
 
-RUN pre-commit install
+RUN pre-commit run --all-files

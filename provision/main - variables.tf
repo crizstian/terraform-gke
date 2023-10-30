@@ -13,10 +13,4 @@ variable "gke_num_nodes" {
 }
 
 variable "tags" {}
-variable "enable_harness_k8s_connector" {
-  default = true
-}
-variable "enable_harness_ccm_connector" {
-  default = true
-}
 
