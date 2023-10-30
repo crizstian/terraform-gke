@@ -17,23 +17,3 @@ module "gcp" {
     google = google.gcp
   }
 }
-
-# module "kubernetes" {
-#   source                       = "./modules/kubernetes"
-#   kubernetes_service_accounts  = local.kubernetes_service_accounts
-#   kubernetes_roles             = local.kubernetes_roles
-#   kubernetes_secrets           = local.kubernetes_secrets
-#   enable_harness_ccm_connector = var.enable_harness_ccm_connector
-
-#   providers = {
-#     kubernetes = kubernetes.gke
-#   }
-# }
-
-# module "harness" {
-#   depends_on               = [module.kubernetes]
-#   source                   = "./modules/harness"
-#   kubernetes_connector     = local.kubernetes_connector
-#   kubernetes_ccm_connector = local.kubernetes_ccm_connector
-#   harness_secrets          = local.harness_secrets
-# }
