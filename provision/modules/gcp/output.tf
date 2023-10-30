@@ -6,4 +6,3 @@ output "gke" {
     name                   = google_container_cluster.primary.name
   }
 }
-

@@ -13,7 +13,12 @@ output "kubernetes_cluster_name" {
   description = "GKE Cluster Name"
 }
 
-output "kubernetes_cluster_host" {
+output "gke_endpoint" {
   value       = module.gcp.gke.endpoint
   description = "GKE Cluster Host"
+}
+
+output "gke_cluster_ca_certificate" {
+  value       = module.gcp.gke.cluster_ca_certificate
+  description = "GKE Cluster Certificate"
 }
