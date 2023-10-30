@@ -35,9 +35,3 @@ variable "gke_num_nodes" {
 variable "tags" {
   default = ["gke-node", "sales-209522-gke"]
 }
-variable "enable_harness_k8s_connector" {
-  default = true
-}
-variable "enable_harness_ccm_connector" {
-  default = true
-}
