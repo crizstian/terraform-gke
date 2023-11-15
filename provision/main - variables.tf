@@ -2,7 +2,7 @@ variable "gcp_project_id" {
   default = "sales-209522"
 }
 variable "gcp_region" {
-  default = "us-central1"
+  default = "us-west1"
 }
 variable "gcp_machine_type" {
   default = "n1-standard-2"
