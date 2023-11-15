@@ -1,10 +1,5 @@
 terraform {
 
-  backend "gcs" {
-    bucket = "crizstian-terraform"
-    prefix = var.backend_prefix
-  }
-
   required_providers {
     google = {
       source = "hashicorp/google"
