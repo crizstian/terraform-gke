@@ -35,4 +35,3 @@ variable "gke_num_nodes" {
 variable "tags" {
   default = ["gke-node", "sales-209522-gke"]
 }
-variable "backend_prefix" {}
