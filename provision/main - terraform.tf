@@ -2,7 +2,7 @@ terraform {
 
   backend "gcs" {
     bucket = "crizstian-terraform"
-    prefix = "cristian-citibanamex-gke"
+    prefix = var.backend_prefix
   }
 
   required_providers {
