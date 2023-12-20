@@ -11,7 +11,7 @@ variable "gcp_service_account" {
   default = "sales-demo-admin@sales-209522.iam.gserviceaccount.com"
 }
 variable "gcp_network" {
-  default = "default"
+  default = "prod"
 }
 variable "gcp_subnetwork" {
   default = "default"
@@ -26,7 +26,7 @@ variable "gke_cluster_labels" {
   }
 }
 variable "gke_version_prefix" {
-  default = "1.26."
+  default = "1.27."
 }
 variable "gke_num_nodes" {
   description = "number of gke nodes"
