@@ -26,7 +26,7 @@ variable "gke_cluster_labels" {
   }
 }
 variable "gke_version_prefix" {
-  default = "1.27."
+  default = "1.26."
 }
 variable "gke_num_nodes" {
   description = "number of gke nodes"
