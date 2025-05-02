@@ -30,7 +30,7 @@ variable "gke_version_prefix" {
 }
 variable "gke_num_nodes" {
   description = "number of gke nodes"
-  default     = 1
+  default     = 2
 }
 variable "tags" {
   default = ["gke-node", "sales-209522-gke"]
