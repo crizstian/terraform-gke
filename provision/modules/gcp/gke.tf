@@ -45,6 +45,11 @@ resource "google_container_node_pool" "primary_nodes" {
     "${var.gcp_region}-c"
   ]
 
+  autoscaling {
+    min_node_count = 1
+    max_node_count = 5
+  }
+
   node_config {
     service_account = data.google_service_account.sa.email
     oauth_scopes = [
